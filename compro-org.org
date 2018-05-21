@@ -1,0 +1,23 @@
+#+TITLE: Org mode configurations
+
+#+BEGIN_COMMENT
+For spacemacs
+#+END_COMMENT
+
+The TODO files are not added to the agenda automatically. To do so, we need the
+following code:
+#+BEGIN_SRC emacs-lisp -i
+(with-eval-after-load 'org-agenda
+  (require 'org-projectile)
+  (push (org-projectile-todo-files) org-agenda-files))
+#+END_SRC
+
+To permanently enable mode line display of org clock:
+#+BEGIN_SRC emacs-lisp -i
+(setq spaceline-org-clock-p t)
+#+END_SRC
+
+Success message:
+#+BEGIN_SRC emacs-lisp -i
+(message "Loaded Compro's org mode configurations!")
+#+END_SRC

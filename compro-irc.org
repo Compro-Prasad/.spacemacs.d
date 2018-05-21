@@ -1,0 +1,10 @@
+#+TITLE: IRC configurations
+
+Server list:
+#+BEGIN_SRC emacs-lisp -i
+(setq rcirc-server-alist
+      '(("irc.freenode.net"
+         :user-name "compro"
+         :port "1337"
+         :channels ("#emacs" "#thittam" "#spacemacs"))))
+#+END_SRC
