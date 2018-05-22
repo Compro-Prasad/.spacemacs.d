@@ -5,6 +5,6 @@ Server list:
 (setq rcirc-server-alist
       '(("irc.freenode.net"
          :user-name "compro"
-         :port "1337"
+         :port "8000"
          :channels ("#emacs" "#thittam" "#spacemacs"))))
 #+END_SRC
