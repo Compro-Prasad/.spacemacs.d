@@ -524,6 +524,8 @@ in the dump."
   (require 'emmet-mode)
   (require 'helm)
   (require 'rcirc)
+  (require 'auto-compile)
+  (require 'semantic)
   (load-file "~/.spacemacs.d/compro-emacs.el")
   )
 
