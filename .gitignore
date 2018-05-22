@@ -1,0 +1,3 @@
+*.el
+!init.el
+!compro-emacs.el
