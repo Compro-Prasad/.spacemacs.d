@@ -146,7 +146,7 @@ It should only modify the values of Spacemacs settings."
    ;; File path pointing to emacs 27.1 executable compiled with support
    ;; for the portable dumper (this is currently the branch pdumper).
    ;; (default "emacs")
-   dotspacemacs-emacs-pdumper-executable-file "emacs"
+   dotspacemacs-emacs-pdumper-executable-file "emacs-27.0.50"
 
    ;; Name of the Spacemacs dump file. This is the file will be created by the
    ;; portable dumper in the cache directory under dumps sub-directory.
@@ -511,6 +511,18 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 This function is called while dumping Spacemacs configuration. You can
 `require' or `load' the libraries of your choice that will be included
 in the dump."
+  (require 'evil-magit)
+  (require 'rainbow-delimiters)
+  (require 'yasnippet)
+  (require 'company)
+  (require 'gnus)
+  (require 'flycheck)
+  (require 'rtags)
+  (require 'yasnippet-snippets)
+  (require 'web-mode)
+  (require 'emmet-mode)
+  (require 'helm)
+  (require 'rcirc)
   )
 
 (defun dotspacemacs/user-config ()
