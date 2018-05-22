@@ -1,2 +1,2 @@
-(org-babel-load-file "compro-org.org")
-(org-babel-load-file "compro-irc.org")
+(org-babel-load-file "~/.spacemacs.d/compro-org.org")
+(org-babel-load-file "~/.spacemacs.d/compro-irc.org")
