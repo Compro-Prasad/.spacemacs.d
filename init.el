@@ -50,7 +50,7 @@ This function should only modify configuration layer settings."
      ;; languages
      html
      (c-c++ :variables
-            c-c++-enable-clang-support t
+            c-c++-enable-clang-support nil
             c-c++-default-mode-for-headers 'c++-mode
             c-c++-enable-rtags-support t)
      graphviz
@@ -66,7 +66,7 @@ This function should only modify configuration layer settings."
      node
      pandoc
      imenu-list
-     cmake
+     (cmake :variables cmake-enable-cmake-ide-support t)
      nginx
      pdf-tools
      ranger
