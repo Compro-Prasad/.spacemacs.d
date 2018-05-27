@@ -21,3 +21,14 @@ Success message:
 #+BEGIN_SRC emacs-lisp -i
 (message "Loaded Compro's org mode configurations!")
 #+END_SRC
+
+Support for CUSTOM_ID in org export latex:
+#+BEGIN_SRC emacs-lisp -i
+(setq org-latex-prefer-user-labels t)
+#+END_SRC
+
+I don't like indenting my org files. Org mode can do it for me and it doesn't
+adds spaces to the actual content.
+#+BEGIN_SRC emacs-lisp -i
+(setq org-startup-indented t)
+#+END_SRC
