@@ -57,6 +57,8 @@ This function should only modify configuration layer settings."
      latex
      javascript
      emacs-lisp
+     php
+     python
      markdown
 
      ;; tools
@@ -85,6 +87,9 @@ This function should only modify configuration layer settings."
      ;; mail
      gnus
 
+     ;; pair programming
+     floobits
+
      ;; fun
      games
      emoji
@@ -99,6 +104,7 @@ This function should only modify configuration layer settings."
           org-enable-reveal-js-support t
           org-enable-org-journal-support t
           org-projectile-file "TODOs.org")
+     bibtex
      better-defaults
      (ibuffer :variables ibuffer-group-buffers-by 'projects)
 
