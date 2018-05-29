@@ -1,2 +1,5 @@
 (org-babel-load-file "~/.spacemacs.d/compro-org.org")
 (org-babel-load-file "~/.spacemacs.d/compro-irc.org")
+(org-babel-load-file "~/.spacemacs.d/compro-spell-check.org")
+(org-babel-load-file "~/.spacemacs.d/compro-mode-line.org")
+(org-babel-load-file "~/.spacemacs.d/compro-misc.org")

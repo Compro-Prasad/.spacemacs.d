@@ -1,0 +1,7 @@
+#+TITLE: Miscellaneous configurations
+
+I don't like the mode highlighting the current line. Though it is better in
+modes where there are long lines like in a table, package list, etc.
+#+BEGIN_SRC emacs-lisp -i
+(global-hl-line-mode 0)
+#+END_SRC
