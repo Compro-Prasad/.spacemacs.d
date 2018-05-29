@@ -6,5 +6,8 @@ Server list:
       '(("irc.freenode.net"
          :user-name "compro"
          :port "8000"
-         :channels ("#emacs" "#thittam" "#spacemacs"))))
+         :channels ("#emacs" "#thittam" "#spacemacs"))
+        ("irc.gnome.org"
+         :user-name "compro"
+         :port "8000")))
 #+END_SRC
