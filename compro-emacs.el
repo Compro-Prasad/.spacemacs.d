@@ -3,3 +3,5 @@
 (org-babel-load-file "~/.spacemacs.d/compro-spell-check.org")
 (org-babel-load-file "~/.spacemacs.d/compro-mode-line.org")
 (org-babel-load-file "~/.spacemacs.d/compro-misc.org")
+(org-babel-load-file "~/.spacemacs.d/compro-cpp-lang.org")
+(org-babel-load-file "~/.spacemacs.d/compro-shell.org")

@@ -1,0 +1,24 @@
+#+TITLE: C/C++ configurations
+
+Single file compilation is necessary sometime, so I use the ~test-c~ package:
+#+BEGIN_SRC emacs-lisp -i
+(use-package test-c
+  :ensure t
+  :init
+  (global-set-key (kbd "C-<f9>") 'test-c))
+#+END_SRC
+
+* C++ IDE configuration
+#+BEGIN_SRC emacs-lisp -i
+(defun ccls//enable ()
+  (condition-case nil
+      (lsp-ccls-enable)
+    (user-error nil)))
+
+(use-package ccls
+  :ensure t
+  :commands lsp-ccls-enable
+  :init (add-hook 'c-mode-common-hook #'ccls//enable))
+(define-key evil-normal-state-map (kbd "C-p") 'lsp-ui-peek-jump-forward)
+(define-key evil-normal-state-map (kbd "C-t") 'lsp-ui-peek-jump-backward)
+#+END_SRC
