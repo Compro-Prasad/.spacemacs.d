@@ -3,11 +3,12 @@
 Server list:
 #+BEGIN_SRC emacs-lisp -i
 (setq rcirc-server-alist
-      '(("irc.freenode.net"
+      '(("107.182.226.199"   ; "irc.freenode.net"
          :user-name "compro"
-         :port "8000"
+         :port "6666"
          :channels ("#emacs" "#thittam" "#spacemacs"))
-        ("irc.gnome.org"
+        ("130.239.18.215"     ; "irc.gnome.org"
          :user-name "compro"
-         :port "8000")))
+         :port "6666")
+        ))
 #+END_SRC
