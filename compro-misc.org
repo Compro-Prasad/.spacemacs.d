@@ -22,6 +22,17 @@ Enable hungry deletion:
 (global-hungry-delete-mode t)
 #+END_SRC
 
+I don't like the line wrapping fringe indicators. Better have it on one side
+only. But not on the left side as it causes distraction:
+#+BEGIN_SRC emacs-lisp -i
+(setf (cdr (assq 'continuation fringe-indicator-alist))
+      ;; '(nil nil) ;; no continuation indicators
+      '(nil right-curly-arrow) ;; right indicator only
+      ;; '(left-curly-arrow nil) ;; left indicator only
+      ;; '(left-curly-arrow right-curly-arrow) ;; default
+      )
+#+END_SRC
+
 Success message:
 #+BEGIN_SRC emacs-lisp -i
 (message "Loaded Compro's miscellaneous configuration file.")
