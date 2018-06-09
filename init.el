@@ -78,6 +78,7 @@ This function should only modify configuration layer settings."
 
      ;; tools
      (shell :variables
+            shell-default-shell 'eshell
             shell-default-height 30
             shell-default-position 'bottom)
      node
@@ -91,6 +92,8 @@ This function should only modify configuration layer settings."
      systemd
      debug
      github
+     web-beautify
+     xclipboard
 
      ;; web
      twitter
