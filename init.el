@@ -42,7 +42,7 @@ This function should only modify configuration layer settings."
      helm
      auto-completion
      git
-     neotree
+     treemacs
      spell-checking
      syntax-checking
      version-control
