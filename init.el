@@ -62,7 +62,7 @@ This function should only modify configuration layer settings."
             c-c++-enable-rtags-support nil)
      graphviz
      latex
-     javascript
+     (javascript :variables javascript-backend 'lsp)
      emacs-lisp
      php
      django
