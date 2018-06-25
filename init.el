@@ -531,6 +531,8 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
+  (setenv "PATH" (concat "/home/compro/.nvm/versions/node/v9.3.0/bin:"
+                         (getenv "PATH")))
   )
 
 (defun dotspacemacs/user-load ()
