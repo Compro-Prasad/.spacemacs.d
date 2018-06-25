@@ -86,7 +86,7 @@ This function should only modify configuration layer settings."
      imenu-list
      (cmake :variables cmake-enable-cmake-ide-support t)
      nginx
-     pdf-tools
+     pdf
      ranger
      tern
      systemd
