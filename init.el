@@ -57,7 +57,7 @@ This function should only modify configuration layer settings."
      ;; languages
      html
      (c-c++ :variables
-            c-c++-enable-clang-support nil
+            c-c++-enable-clang-support t
             c-c++-default-mode-for-headers 'c++-mode
             c-c++-enable-rtags-support nil)
      graphviz
