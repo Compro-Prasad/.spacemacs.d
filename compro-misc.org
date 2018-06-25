@@ -14,7 +14,7 @@ Better linum colors for spacemacs dark theme:
 
 Enable line numbers for programming mode:
 #+BEGIN_SRC emacs-lisp -i
-(add-hook 'prog-mode-hook 'linum-mode)
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
 #+END_SRC
 
 Enable hungry deletion:
