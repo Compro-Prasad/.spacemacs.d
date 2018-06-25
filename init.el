@@ -55,6 +55,7 @@ This function should only modify configuration layer settings."
      version-control
 
      ;; languages
+     yaml
      html
      (c-c++ :variables
             c-c++-enable-clang-support t
