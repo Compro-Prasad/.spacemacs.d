@@ -533,20 +533,6 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 This function is called while dumping Spacemacs configuration. You can
 `require' or `load' the libraries of your choice that will be included
 in the dump."
-  (require 'evil-magit)
-  (require 'rainbow-delimiters)
-  (require 'yasnippet)
-  (require 'company)
-  (require 'gnus)
-  (require 'flycheck)
-  (require 'yasnippet-snippets)
-  (require 'web-mode)
-  (require 'emmet-mode)
-  (require 'helm)
-  (require 'rcirc)
-  (require 'auto-compile)
-  (require 'semantic)
-  (load-file "~/.spacemacs.d/compro-emacs.el")
   )
 
 (defun dotspacemacs/user-config ()
