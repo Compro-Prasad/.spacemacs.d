@@ -116,7 +116,6 @@ This function should only modify configuration layer settings."
      selectric
 
      ;; Emacs
-     semantic
      (org :variables
           org-enable-bootstrap-support t
           org-enable-github-support t
