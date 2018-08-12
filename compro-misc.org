@@ -6,17 +6,6 @@ modes where there are long lines like in a table, package list, etc.
 (global-hl-line-mode 0)
 #+END_SRC
 
-Better linum colors for spacemacs dark theme:
-#+BEGIN_SRC emacs-lisp -i
-(custom-set-faces
- '(linum ((t (:inherit default :background "#292b2e" :foreground "#677")))))
-#+END_SRC
-
-Enable line numbers for programming mode:
-#+BEGIN_SRC emacs-lisp -i
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
-#+END_SRC
-
 Enable hungry deletion:
 #+BEGIN_SRC emacs-lisp -i
 (global-hungry-delete-mode t)
