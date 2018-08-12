@@ -21,8 +21,3 @@ only. But not on the left side as it causes distraction:
       ;; '(left-curly-arrow right-curly-arrow) ;; default
       )
 #+END_SRC
-
-Success message:
-#+BEGIN_SRC emacs-lisp -i
-(message "Loaded Compro's miscellaneous configuration file.")
-#+END_SRC

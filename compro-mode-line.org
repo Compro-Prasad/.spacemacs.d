@@ -5,8 +5,3 @@ I like flat mode-line:
 (set-face-attribute 'mode-line nil :box nil)
 (set-face-attribute 'mode-line-inactive nil :box nil)
 #+END_SRC
-
-Success message:
-#+BEGIN_SRC emacs-lisp -i
-(message "Loaded Compro's mode line configurations!")
-#+END_SRC

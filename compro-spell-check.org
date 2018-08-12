@@ -7,8 +7,3 @@ I don't want =flyspell-mode= to be activated in programming modes:
             (when (derived-mode-p 'prog-mode)
               (flyspell-mode-off))))
 #+END_SRC
-
-Success message:
-#+BEGIN_SRC emacs-lisp -i
-(message "Loaded Compro's org mode configurations!")
-#+END_SRC

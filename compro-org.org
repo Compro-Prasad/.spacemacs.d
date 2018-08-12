@@ -27,8 +27,3 @@ adds spaces to the actual content.
 #+BEGIN_SRC emacs-lisp -i
 (setq org-startup-indented t)
 #+END_SRC
-
-Success message:
-#+BEGIN_SRC emacs-lisp -i
-(message "Loaded Compro's org mode configurations!")
-#+END_SRC
