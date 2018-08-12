@@ -542,6 +542,7 @@ before packages are loaded."
   (load-file "~/.spacemacs.d/compro-emacs.el")
   (spaceline-toggle-minor-modes-off)
   (spaceline-toggle-hud-off)
+  (spaceline-toggle-version-control-off)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
