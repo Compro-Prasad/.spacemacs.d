@@ -1,7 +1,0 @@
-#+TITLE: Modeline configurations
-
-I like flat mode-line:
-#+BEGIN_SRC emacs-lisp -i
-(set-face-attribute 'mode-line nil :box nil)
-(set-face-attribute 'mode-line-inactive nil :box nil)
-#+END_SRC
