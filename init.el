@@ -508,7 +508,9 @@ This function defines the environment variables for your Emacs session. By
 default it calls `spacemacs/load-spacemacs-env' which loads the environment
 variables declared in `~/.spacemacs.env' or `~/.spacemacs.d/.spacemacs.env'.
 See the header of this file for more information."
-  (spacemacs/load-spacemacs-env))
+  (spacemacs/load-spacemacs-env)
+  (setenv "HTTP_PROXY" "172.16.1.12:3128")
+  (setenv "HTTPS_PROXY" "172.16.1.12:3128"))
 
 (defun dotspacemacs/user-init ()
   "Initialization for user code:
