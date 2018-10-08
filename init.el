@@ -123,6 +123,7 @@ This function should only modify configuration layer settings."
           org-enable-github-support t
           org-enable-reveal-js-support t
           org-enable-org-journal-support t
+          org-enable-hugo-support t
           org-projectile-file "TODOs.org")
      bibtex
      better-defaults
