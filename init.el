@@ -60,9 +60,10 @@ This function should only modify configuration layer settings."
      yaml
      html
      (c-c++ :variables
-            c-c++-enable-clang-support t
             c-c++-default-mode-for-headers 'c++-mode
-            c-c++-enable-rtags-support nil)
+            c-c++-adopt-subprojects t
+            c-c++-backend 'lsp-ccls
+            c-c++-enable-clang-format-on-save t)
      graphviz
      latex
      (javascript :variables javascript-backend 'lsp)
