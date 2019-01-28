@@ -231,7 +231,7 @@ It should only modify the values of Spacemacs settings."
    ;; with `:variables' keyword (similar to layers). Check the editing styles
    ;; section of the documentation for details on available variables.
    ;; (default 'vim)
-   dotspacemacs-editing-style 'hybrid
+   dotspacemacs-editing-style 'vim
 
    ;; If non-nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
@@ -522,11 +522,6 @@ This function is called immediately after `dotspacemacs/init', before layer
 configuration.
 It is mostly for variables that should be set before packages are loaded.
 If you are unsure, try setting them in `dotspacemacs/user-config' first."
-  (add-to-list 'load-path "/home/compro/Downloads/github.com/akermu/emacs-libvterm")
-  (add-to-list 'load-path "~/.local/share/icons-in-terminal/") ;; If it's not already done
-  (add-to-list 'load-path "~/.spacemacs.d/sidebar.el")
-  (add-to-list 'load-path "~/.spacemacs.d/frame-local")
-  (add-to-list 'load-path "~/.spacemacs.d/emacs-application-framework")
   (setenv "PATH" (concat "/home/compro/.nvm/versions/node/v9.3.0/bin:"
                          (getenv "PATH")))
   )
@@ -538,6 +533,12 @@ This function is called only while dumping Spacemacs configuration. You can
 dump."
   (require 'org)
   (require 'magit)
+  (require 'helm)
+  (require 'monokai-theme)
+  (require 'lsp)
+  (require 'company)
+  (require 'spaceline)
+  (require 'treemacs)
   )
 
 (defun dotspacemacs/user-config ()
