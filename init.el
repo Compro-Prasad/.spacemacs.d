@@ -567,6 +567,8 @@ before packages are loaded."
   (spaceline-toggle-minor-modes-off)
   (spaceline-toggle-hud-off)
   (spaceline-toggle-version-control-off)
+  (with-eval-after-load 'helm
+    (setq helm-buffer-max-length 40))
   (defun enable-telega-notifications ()
     (require 'telega-notifications)
     (telega-notifications-mode 1))
