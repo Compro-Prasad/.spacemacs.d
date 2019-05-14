@@ -567,7 +567,16 @@ before packages are loaded."
   (spaceline-toggle-minor-modes-off)
   (spaceline-toggle-hud-off)
   (spaceline-toggle-version-control-off)
-  )
+  (defun enable-telega-notifications ()
+    (require 'telega-notifications)
+    (telega-notifications-mode 1))
+  (use-package telega
+    :load-path  "~/Downloads/github.com/zevlg/telega.el/"
+    :commands (telega)
+    :defer t
+    :config
+    (add-hook 'telega-root-mode-hook 'enable-telega-notifications))
+)
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
