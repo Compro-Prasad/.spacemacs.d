@@ -542,6 +542,7 @@ dump."
   (require 'company)
   (require 'spaceline)
   (require 'treemacs)
+  (spacemacs-modeline/init-spaceline)
   )
 
 (defun dotspacemacs/user-config ()
