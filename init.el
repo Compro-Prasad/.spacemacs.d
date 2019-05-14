@@ -121,6 +121,7 @@ This function should only modify configuration layer settings."
 
      ;; Emacs
      (org :variables
+          org-enable-epub-support t
           org-enable-bootstrap-support t
           org-enable-github-support t
           org-enable-reveal-js-support t
