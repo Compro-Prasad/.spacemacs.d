@@ -52,7 +52,10 @@ This function should only modify configuration layer settings."
                       auto-completion-show-snippets-in-popup t)
      git
      treemacs
-     spell-checking
+     (spell-checking
+      :variables
+      enable-flyspell-auto-completion nil
+      spell-checking-enable-by-default nil)
      syntax-checking
      version-control
      ; dart
