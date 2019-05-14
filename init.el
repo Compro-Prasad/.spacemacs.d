@@ -74,12 +74,10 @@ This function should only modify configuration layer settings."
      php
      django
      (python :variables
-             python-backend 'anaconda
-             python-enable-yapf-format-on-save t
+             python-backend 'lsp
              python-fill-column 80
              python-auto-set-local-pyenv-version 'on-visit
              python-auto-set-local-pyvenv-virtualenv 'on-visit
-             python-sort-imports-on-save t
              python-test-runner '(nose pytest))
      markdown
 
