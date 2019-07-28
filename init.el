@@ -535,14 +535,7 @@ If you are unsure, try setting them in `dotspacemacs/user-config' first."
 This function is called only while dumping Spacemacs configuration. You can
 `require' or `load' the libraries of your choice that will be included in the
 dump."
-  (require 'org)
-  (require 'magit)
-  (require 'helm)
-  (require 'monokai-theme)
-  (require 'lsp)
-  (require 'company)
-  (require 'spaceline)
-  (require 'treemacs)
+  (spacemacs/dump-modes '(org-mode emacs-lisp-mode c++-mode web-mode magit-status-mode))
   (spacemacs-modeline/init-spaceline)
   )
 
