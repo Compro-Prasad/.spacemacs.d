@@ -42,7 +42,8 @@ This function should only modify configuration layer settings."
      ;; Uncomment some layer names and press `SPC f e R' (Vim style) or
      ;; `M-m f e R' (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     lsp
+     (lsp :variables
+          lsp-ui-sideline-enable nil)
      dap
      helm
      (auto-completion :variables
